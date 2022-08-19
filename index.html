@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nekko Survey Form</title>
+
+    <link rel="stylesheet" href="sytles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Nekko Survey Form</h1>
+        <p id="description"><em>We would like to know your liking for cats!</em></p>
+    </header>
+    <main>
+        <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter Your Name:
+            <input id="name" type="text" placeholder="e.g. John Smith" required />
+            </label>
+            <label id="email-label">Enter Your Email: 
+            <input id="email" type="email" placeholder="e.g. johnsmith@email.com" required />
+            </label>
+            <label id="number-label">Enter Your Age: 
+            <input id="number" type="number" min="13" max="120" placeholder="e.g. 25" required />
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>What Type of Cat do you like best?
+            <select id="dropdown">
+                <option value="select" />(select your liking...)</option>
+                <option value="polydactyl" />Polydactyl</option>
+                <option value="britishShorthair" />British Shorthair</option>
+                <option value="persian" />Persian</option>
+                <option value="scottishFold" />Scottish Fold</option>
+            </select>
+            <label>
+        </fieldset>
+        <fieldset>
+            <label>Would you like your cat be a female or a male?</label>
+            <label><input type="radio" name="cat-sex" class="radio" />Female</label>
+            <label><input type="radio" name="cat-sex" class="radio" />Male</label>
+        </fieldset>
+        <fieldset>
+            <label>Which name would you like your cat to have? <small>(choose 2)</small></label>
+            <label>
+                <input type="checkbox" value="cat-name"/>
+                Luna
+            </label>
+            <label>
+                <input type="checkbox" value="cat-name"/>
+                Loki
+            </label>
+            <label>
+                <input type="checkbox" value="cat-name"/>
+                Lily
+            </label>
+            <label>
+                <input type="checkbox" value="cat-name"/>
+                Milo
+            </label>
+        </fieldset>
+        <fieldset>
+            <label> Do you have any comments or suggestions about this survey? We would love to know about them!
+            <textarea rows="4" cols="40" placeholder="I really enjoyed taking the survey. I think you can improve on..."></textarea>
+            </label>
+        </fieldset>
+        <button type="submit">Submit</button>
+        </form>
+    </main>>
+</body>
+</html>
